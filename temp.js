@@ -206,6 +206,7 @@ setInterval(() => {
             totalCost -= amount * costPrice;
             totalShares -= amount;
             totalProfit += profit;
+            capital += profit;
 
             // 添加卖出记录
             userRecords.push({
@@ -279,6 +280,7 @@ setInterval(() => {
             totalCost = 0;
             totalShares = 0;
             totalProfit += profit;
+            capital += profit;
 
             updateUserRecordList();
             updateTotalProfit();
