@@ -45,7 +45,7 @@ chart.setOption(option);
 
 // 模拟价格数据
 function getNewPrice(lastPrice) {
-    return lastPrice*(Math.random()*0.2+0.9-0.02); // 随机生成 50 到 150 之间的价格
+    return lastPrice*(Math.random()*0.2+0.9+0.005); // 随机生成 50 到 150 之间的价格
 }
 
 // 当前分钟的临时数据
